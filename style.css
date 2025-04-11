@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100%;
+}
+
+/* Set height of section */
+/* Set flex */
+.section {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+}
+/* Set height of header and footer */
+/* Set flex */
+.header,
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Set background colors and fonts */
+.header,
+.hero,
+.footer {
+  background-color: #1F2937;
+  color: #f9faf8
+}
+
+.quote {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+a,
+.hero-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hero-text h3 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.button {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.action .button {
+  border: 1px solid #e5e7eb;
+}
+
+.image h3 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+}
+
+.thumbnail p {
+  font-size: 14px;
+  color: rgb(111, 111, 111)
+}
+/* Set central width */
+.centering {
+  width: 900px;
+  padding: 10px;
+}
+
+/* Per section styling */
+/* Header section */
+.header>.centering {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; 
+}
+
+/* Hero section */
+.hero>.centering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-text {
+ margin-right: 30px; 
+}
+
+.hero-text>p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+/* Image section */
+.image>.centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.thumbnail {
+  width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.thumbnail>img {
+  margin-bottom: 10px;
+}
+
+/* Quote Section */
+.quote>.centering {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: justify;
+}
+
+.quote>.centering p:last-child {
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Call to Action section */
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.action>.centering {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Footer */
+.footer p {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+/* Images */
+.hero-image img {
+  height: 300px;
+}
+
+.thumbnail img {
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid #3882f6;
+}
